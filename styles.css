@@ -108,10 +108,14 @@ p {
 }
 
 .col-4 {
-  flex-basis: 25%;
+  flex-basis: 24%;
   min-width: 200px;
   padding: 20px;
   margin-bottom: 50px;
+  transition: transform 0.5s;
+  background-color: rgba(240, 240, 240, 0.986);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .col-4 img {
@@ -136,4 +140,22 @@ p {
   left: 50%;
   bottom: 0;
   transform: translateX(-50%);
+}
+
+h4 {
+  color: #555;
+  font-weight: normal;
+}
+
+.col-4 p {
+  font-size: 14px;
+}
+
+.rating .fa-solid,
+.fa-regular {
+  color: #ff523b;
+}
+
+.col-4:hover {
+  transform: translateY(-5px);
 }
